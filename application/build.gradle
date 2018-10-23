@@ -235,7 +235,7 @@ sonarqube {
         property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
         property "sonar.exclusions", coverageExclusionList.join(", ")
         property "sonar.pitest.mode", "reuseReport"
-        property "sonar.pitest.reportsDirectory", "build/reports/pitest"
+        property "sonar.pitest.reportsDirectory", "${project.buildDir}/reports/pitest"
     }
 }
 
